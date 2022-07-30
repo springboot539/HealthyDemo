@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoListActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/info_iv_flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/flush" />
+
+        <ImageView
+            android:id="@+id/info_iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/info_iv_flush"
+            android:src="@drawable/find" />
+
+        <EditText
+            android:id="@+id/info_et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="請輸入要搜索的内容" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/info_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="2dp" />
+
+</LinearLayout>
