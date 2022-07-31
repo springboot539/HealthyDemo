@@ -8,35 +8,34 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 
-public class AboutAdapter extends PagerAdapter {
+public class GuideAdapter  extends PagerAdapter {
+
     List<View> mViewList;
 
-    public AboutAdapter(List<View> viewList) {
+    public GuideAdapter(List<View> viewList) {
         mViewList = viewList;
     }
 
     @Override
     public int getCount() {
-//        能够滑动的次数,
-        return Integer.MAX_VALUE;
+        return mViewList.size();
     }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == object;
+        return mViewList == object;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        View view = mViewList.get(position%mViewList.size());
+        View view = mViewList.get(position);
         container.addView(view);
         return view;
     }
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        View view = mViewList.get(position%mViewList.size());
-        container.removeView(view);
+        container.removeView(mViewList.get(position));
     }
 }

@@ -90,7 +90,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         intent.setType("text/plain");
         String msg = "您的随手转发将会对我们产生巨大的影响,感谢您的分享!";
         intent.putExtra(Intent.EXTRA_TEXT, msg);
-        startActivity(Intent.createChooser(intent, "软件分享"));
+        startActivity(Intent.createChooser(intent, "123123123123123"));
     }
 
     Handler mHandler = new Handler() {
