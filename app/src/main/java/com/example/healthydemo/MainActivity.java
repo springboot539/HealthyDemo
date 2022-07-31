@@ -1,11 +1,12 @@
 package com.example.healthydemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModel;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.healthydemo.grid.FoodGridActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setClass(this, InfoListActivity.class);
                 break;
             case R.id.home_btn2:
-
+                intent.setClass(this, FoodGridActivity.class);
                 break;
             case R.id.home_btn3:
                 break;
