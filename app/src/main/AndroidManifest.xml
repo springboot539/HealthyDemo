@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfoListActivity"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".InfoListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".grid.FoodGridActivity" />
+        <activity android:name=".FoodGridActivity" />
+        <activity android:name=".FoodDescActivity" />
     </application>
 
 </manifest>

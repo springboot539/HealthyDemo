@@ -1,14 +1,16 @@
 package com.example.healthydemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.healthydemo.Utils.FoodUtils;
 import com.example.healthydemo.adapter.InfoListAdapter;
@@ -36,6 +38,19 @@ public class InfoListActivity extends AppCompatActivity implements View.OnClickL
         mDatas.addAll(allFoodList);
         mInfoListAdapter = new InfoListAdapter(this, mDatas);
         showLv.setAdapter(mInfoListAdapter);
+        initListener();
+    }
+
+    private void initListener() {
+        showLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FoodBean foodBean = mDatas.get(position);
+                Intent intent =new Intent(InfoListActivity.this,FoodDescActivity.class);
+                intent.putExtra("food",foodBean);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {

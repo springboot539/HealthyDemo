@@ -1,6 +1,8 @@
 package com.example.healthydemo.domain;
 
-public class FoodBean {
+import java.io.Serializable;
+
+public class FoodBean implements Serializable {
 
     private String title;
     private String notmatch;
