@@ -42,4 +42,8 @@ public class FoodGridActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void back1(View view) {
+        finish();
+    }
 }
