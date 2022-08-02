@@ -74,7 +74,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 for (int i = 0; i < pointList.size(); i++) {
                     pointList.get(i).setImageResource(R.drawable.next);
                 }
-                pointList.get(position% pointList.size()).setImageResource(R.drawable.flush);
+                pointList.get(position % pointList.size()).setImageResource(R.drawable.flush);
             }
 
             @Override
@@ -104,4 +104,8 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
             }
         }
     };
+
+    public void back2(View view) {
+        finish();
+    }
 }

@@ -73,4 +73,10 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next"
+        android:onClick="back2" />
+
 </LinearLayout>

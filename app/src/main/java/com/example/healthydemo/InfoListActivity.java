@@ -91,6 +91,10 @@ public class InfoListActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
+
+    public void back(View view) {
+        finish();
+    }
 }
 
 

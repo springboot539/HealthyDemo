@@ -10,6 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="30dp">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="back1"/>
+
         <TextView
             android:id="@+id/food_grid_tv_title"
             android:layout_width="wrap_content"
