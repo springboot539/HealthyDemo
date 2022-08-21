@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthy.R;
 import com.example.healthydemo.domain.FoodBean;
 
 public class FoodDescActivity extends AppCompatActivity {

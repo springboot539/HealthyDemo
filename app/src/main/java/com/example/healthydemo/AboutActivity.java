@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.healthy.R;
 import com.example.healthydemo.adapter.AboutAdapter;
 
 import java.util.ArrayList;
@@ -58,7 +59,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         pointList.get(0).setImageResource(R.drawable.flush);
         mAdapter = new AboutAdapter(mViewList);
         mViewPager.setAdapter(mAdapter);
-        mHandler.sendEmptyMessageDelayed(1, 5000);
+        mHandler.sendEmptyMessageDelayed(1, 1000);
         setVPListener();
     }
 
@@ -100,7 +101,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 //                进行页面的自动滑动
                 int currentItem = mViewPager.getCurrentItem();
                 mViewPager.setCurrentItem(currentItem + 1);
-                mHandler.sendEmptyMessageDelayed(1, 5000);
+                mHandler.sendEmptyMessageDelayed(1, 500);
             }
         }
     };

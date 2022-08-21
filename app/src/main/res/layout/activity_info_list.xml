@@ -10,12 +10,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="200dp"
         android:padding="10dp">
         <Button
             android:layout_width="wrap_content"
             android:id="@+id/btn"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/info_et_search"
             android:background="@drawable/next"
             android:onClick="back"/>
 
@@ -43,7 +44,8 @@
             android:id="@+id/info_et_search"
             android:layout_width="wrap_content"
             android:layout_toRightOf="@+id/btn"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/info_et_search"
             android:hint="請輸入要搜索的内容" />
     </RelativeLayout>
 

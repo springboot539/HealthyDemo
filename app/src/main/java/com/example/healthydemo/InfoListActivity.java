@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthy.R;
 import com.example.healthydemo.Utils.FoodUtils;
 import com.example.healthydemo.adapter.InfoListAdapter;
 import com.example.healthydemo.domain.FoodBean;

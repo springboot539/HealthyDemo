@@ -1,6 +1,7 @@
 package com.example.healthydemo.Utils;
 
-import com.example.healthydemo.R;
+
+import com.example.healthy.R;
 import com.example.healthydemo.domain.FoodBean;
 
 import java.util.ArrayList;

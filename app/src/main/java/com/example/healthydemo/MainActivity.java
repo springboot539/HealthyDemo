@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthy.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

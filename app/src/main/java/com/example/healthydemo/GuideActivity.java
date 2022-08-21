@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.healthy.R;
 import com.example.healthydemo.adapter.GuideAdapter;
 
 import java.util.ArrayList;

@@ -9,6 +9,7 @@ import android.widget.GridView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthy.R;
 import com.example.healthydemo.Utils.FoodUtils;
 import com.example.healthydemo.adapter.FoodGridAdapter;
 import com.example.healthydemo.domain.FoodBean;

@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.healthydemo.R;
+import com.example.healthy.R;
 import com.example.healthydemo.domain.FoodBean;
 
 import java.util.List;
